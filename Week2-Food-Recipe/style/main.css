@@ -1,0 +1,355 @@
+/* reset */
+
+*,
+*::after,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* variables  */
+
+ :root {
+    --golden-color: #ffd63c;
+    --golden-background-color: #fffdf5;
+    --light-golden-color: #fffdf5;
+    --pink-color: #c64591;
+    --light-pink-color: #fcf5f9;
+    --grey-color: #333333;
+    --light-grey-color: #999999;
+    --white-color: #ffffff;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--golden-background-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 1.1rem;
+}
+
+.logo {
+    width: 20rem;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: -2.8% !important;
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+}
+
+main {
+    width: clamp(1px, 750px, 1200px);
+    border: 2px solid var(--golden-color);
+    background-color: var(--white-color);
+    position: relative;
+    margin-top: 5rem;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+/* typography */
+
+h1 {
+    color: var(--pink-color);
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    padding: .5rem 0;
+    background-color: var(--pink-color);
+}
+
+
+/*  recipe heading */
+
+.recipe-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+
+.recipe-img img {
+    max-width: 100%;
+    max-height: 394px;
+    display: block;
+    margin: 0 0 0 auto;
+}
+
+.recipe-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+/* recipe buttons */
+
+.interact-with-recipe {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1rem 0;
+}
+
+.interaction-button {
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    border: 1px solid var(--pink-color);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--pink-color);
+    transition: all 200ms ease-in-out;
+}
+
+.interaction-button:hover {
+    background-color: var(--light-pink-color);
+    cursor: pointer;
+    height: 70px;
+}
+
+
+/* recipe rating */
+
+.recipe-rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.recipe-rating p {
+    padding: 0 0 0 5px;
+    cursor: default;
+}
+
+
+/* recipe brief description */
+
+.recipe-description {
+    margin: 1rem 0;
+}
+
+.recipe-description p {
+    font-style: italic;
+    line-height: 2rem;
+}
+
+
+/* recipe body */
+
+.recipe-body>div {
+    margin: 2rem 0;
+}
+
+
+/* recipe-details */
+
+.recipe-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recipe-details-container {
+    margin: 0.5rem 0;
+}
+
+.recipe-details-container p {
+    margin: 0.4rem 0;
+}
+
+.recipe-details-container span {
+    display: inline-block;
+    font-weight: 700;
+    width: 6rem;
+    text-align: left;
+    margin-right: 2rem;
+}
+
+
+/* the bulk of the content, instructions/ingredients, etc */
+
+.recipe-body ul,
+.recipe-body ol {
+    width: 80%;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.recipe-body ul li,
+.recipe-body ol li {
+    margin: 0.7rem;
+    line-height: 2.1rem;
+}
+
+
+/* recipe footer */
+
+.recipe-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* recipe health information table */
+
+.nutrition-table {
+    border: 1px solid var(--grey-color);
+    width: 60%;
+    padding: 0 3px;
+    font-size: 0.9rem;
+}
+
+.nutrition-table h4 {
+    font-weight: 400;
+}
+
+.nutrition-table p {
+    border-bottom: 1px solid var(--grey-color);
+    display: flex;
+}
+
+.nutrition-table-header p {
+    font-weight: 700;
+    font-size: 1.3rem;
+    border: none;
+}
+
+.nutrition-table-line-align-right p {
+    text-align: right;
+    display: block;
+}
+
+.nutrition-table-line-align-left p {
+    margin-left: 1.1rem;
+}
+
+.nutrition-table span {
+    margin-left: auto;
+    display: inline-block;
+}
+
+.nutrition-table p strong {
+    margin-right: 2px;
+}
+
+.nutrition-table span strong {
+    margin-right: 0;
+}
+
+.nutrition-table-filler {
+    height: 0.6rem;
+    background-color: var(--grey-color);
+}
+
+.nutrition-table-line-end p {
+    color: var(--light-grey-color);
+    font-size: 0.6rem;
+    text-align: left;
+    margin: 0.5rem 0 0.2rem;
+    border: none;
+}
+
+
+/* crediting original author/website */
+
+.recipe-crediting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.credits {
+    border: 1px solid var(--golden-color);
+    width: 75%;
+    margin: 2rem auto 0;
+    text-align: center;
+    height: max-content;
+    padding: 1rem;
+}
+
+.recipe-crediting h3 {
+    color: var(--pink-color);
+    background-color: var(--golden-background-color);
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.recipe-crediting p {
+    margin: 1rem 0;
+    line-height: 2rem;
+}
+
+.credits-link {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    color: var(--golden-color);
+    text-align: center;
+}
+
+.credits-link:hover {
+    cursor: pointer;
+}
+
+
+/* footer title */
+
+.footer-title {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--golden-color);
+}
+
+
+/* media queries */
+
+@media (max-width: 758px) {
+    main,
+    .container {
+        width: 100%;
+        padding: 0 5px;
+    }
+    .recipe-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 440px) {
+    .recipe-heading {
+        flex-direction: column;
+    }
+    .logo {
+        top: -1.8% !important;
+    }
+    .nutrition-table {
+        width: 90%;
+    }
+}

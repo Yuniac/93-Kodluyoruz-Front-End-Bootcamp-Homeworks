@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+main {
+  width: clamp(1px, 40%, 1500px);
+  margin: 2rem auto;
+  border: 1px solid red;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 32px;
+  line-height: 2rem;
+  width: 100%;
+  background-color: #ff8a4c;
+  height: 15rem;
+}
+header h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=/main.90218242.css.map */
