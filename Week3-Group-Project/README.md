@@ -8,4 +8,4 @@ Figma: https://www.figma.com/file/YISG57EpMwQ9HF6eIcY0iT/Homework?node-id=0%3A1
 
 ## Contributors:
 
-Yusuf Sabbag, Nurgeldi Atamyradov, Dana Alhameed.
+[Yusuf Sabbag](https://github.com/Yuniac), [Nurgeldi Atamyradov](https://github.com/nurgeldiatamyradov), [Dana Alhameed](https://github.com/dana-hm).
